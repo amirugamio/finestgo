@@ -1,0 +1,376 @@
+/*** Project Portfolio ***/
+#portfolio-flters li {
+  display: inline-block;
+  font-weight: 500;
+  color: var(--dark);
+  cursor: pointer;
+  transition: 0.5s;
+  border-bottom: 2px solid transparent;
+}
+
+#portfolio-flters li:hover,
+#portfolio-flters li.active {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.portfolio-item img {
+  transition: 0.5s;
+  width: 500px;
+  height: 500px;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio-item .portfolio-overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  left: 50%;
+  background: rgba(53, 53, 53, 0.7);
+  transition: 0.5s;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
+.portfolio-item .portfolio-overlay .btn {
+  opacity: 0;
+}
+
+.portfolio-item:hover .portfolio-overlay .btn {
+  opacity: 1;
+}
+/*** Team ***/
+.team-item img {
+  transition: 0.5s;
+  border-radius: 10px;
+  width: 240px;
+  height: 240px;
+}
+
+.team-item:hover img {
+  transform: scale(1.1);
+}
+
+.team-item .team-social {
+  position: absolute;
+  width: 38px;
+  top: 50%;
+  left: -38px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  transition: 0.5s;
+}
+
+.team-item .team-social .btn {
+  color: var(--primary);
+  background: #ffffff;
+}
+
+.team-item .team-social .btn:hover {
+  color: #ffffff;
+  background: var(--primary);
+}
+
+.team-item:hover .team-social {
+  left: 0;
+}
+
+/* Navbar */
+.navbar {
+  transition: all 500ms ease-in-out;
+}
+
+.navbar > div {
+  transition: all 1000ms ease-in-out;
+}
+.navbar-brand {
+  font-family: Viga;
+  font-size: 32px;
+  color: #fff !important;
+}
+.navbar-light .navbar-toggler {
+  color: #fff !important;
+  border-color: #fff !important;
+  background: #fff;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-image: url(img/hero.jpg);
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+.jumbotron .container {
+  z-index: 1;
+  position: relative;
+}
+.jumbotron::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 80%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+}
+.jumbotron .display-4 {
+  color: white;
+  margin-top: 230px;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 45px;
+  bottom: 45px;
+  z-index: 99;
+}
+.btn-lg-square {
+  width: 48px;
+  height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+}
+/* About */
+.about {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.contact {
+  height: 740px;
+}
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+span {
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 200;
+}
+h5 {
+  font-size: 22px;
+  color: rgb(48, 46, 46);
+  font-weight: 400;
+  margin: 2px 0;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.team h5 {
+  font-size: 22px;
+  color: rgb(48, 46, 46);
+  font-weight: 350;
+  margin: 5px 0;
+}
+
+a {
+  font-size: 20px;
+  color: rgb(107, 106, 106);
+  font-weight: 300;
+}
+
+p {
+  font-size: 21px;
+  color: #6d6c6c;
+  font-weight: 200;
+  margin: 10px 0;
+}
+
+li {
+  font-size: 20px;
+  color: #6d6c6c;
+  font-weight: 50;
+  margin: 5px 0;
+}
+small {
+  font-size: 20px;
+  color: #6d6c6c;
+  font-weight: 50;
+  margin: 5px 0;
+}
+
+form {
+  margin-bottom: 50px;
+}
+label {
+  font-size: 18px;
+  color: #6d6c6c;
+  font-weight: 200;
+}
+.product p {
+  font-size: 18px;
+  color: #6d6c6c;
+  font-weight: 200;
+  margin: 30px 0;
+  text-align: justify;
+}
+
+.product h3 {
+  padding-top: 150px;
+}
+.team p {
+  font-size: 18px;
+  color: #6d6c6c;
+  font-weight: 200;
+  margin: 10px 0;
+}
+.team h5 {
+  font-size: 18px;
+  color: #6d6c6c;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.feature p {
+  text-align: start;
+}
+.about img {
+  border-radius: 50px;
+  width: 500px;
+}
+
+.product img {
+  border-radius: 50px;
+  height: 350px;
+}
+
+/* Utility */
+.tombol {
+  border-radius: 40px;
+}
+
+/*** Footer ***/
+.footer {
+  background: linear-gradient(rgba(53, 53, 53, 0.7), rgba(53, 53, 53, 0.7)), url(../img/footer.jpg) center center no-repeat;
+  background-size: cover;
+}
+.footer .btn.btn-link {
+  display: block;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: left;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+
+.footer .btn.btn-link::before {
+  position: relative;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+  color: var(--primary);
+  letter-spacing: 1px;
+  box-shadow: none;
+}
+.footer .btn.btn-social {
+  margin-right: 5px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light);
+  border: 1px solid #ffffff;
+  transition: 0.3s;
+}
+
+.footer .btn.btn-social:hover {
+  color: var(--primary);
+}
+
+/* DESKTOP-VERSION*/
+@media (min-width: 992px) {
+  .navbar-brand,
+  .nav-link {
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #0b63dc;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+  .jumbotron {
+    margin-top: -75px;
+    height: 690px;
+  }
+  .jumbotron .display-4 {
+    font-size: 62px;
+  }
+  .about {
+    text-align: left;
+  }
+  .portfolio-item img {
+    width: 350px;
+    height: 350px;
+  }
+  .tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+  }
+}
