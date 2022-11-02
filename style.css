@@ -158,6 +158,10 @@
   justify-content: center;
   font-weight: normal;
 }
+
+.btn-kirim {
+  width: 100%;
+}
 /* About */
 .about {
   margin-top: 120px;
@@ -285,6 +289,7 @@ label {
 }
 
 /* Utility */
+
 .tombol {
   border-radius: 40px;
 }
